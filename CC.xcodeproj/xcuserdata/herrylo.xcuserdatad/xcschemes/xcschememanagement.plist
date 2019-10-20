@@ -11,8 +11,76 @@
 		</dict>
 		<key>CC.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>base.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>list.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>poin.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>pointer.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>table.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>5F48A290235C974D00B5EBD0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5F48A29B235C97C300B5EBD0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5FDE68CA21244443003C72AC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5FF72A81235C9A3E00EC8413</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5FF72A8C235C9B1400EC8413</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5FF72A97235C9C8F00EC8413</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

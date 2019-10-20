@@ -7,8 +7,7 @@
 //
 
 #include "malloc1.h"
-#include "malloc.h"
-#include "stdlib.h"
+#include <stdlib.h>
 
 void *malloc(size_t size);
 void free(void *ptr);
