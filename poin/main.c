@@ -8,6 +8,7 @@
 
 #include <stdio.h>
 
+//指针
 #include "Pointer/pointer.c"
 
 int main(int argc, const char * argv[]) {
