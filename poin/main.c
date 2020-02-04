@@ -8,6 +8,8 @@
 
 #include <stdio.h>
 
+#include "Pointer/pointer.c"
+
 int main(int argc, const char * argv[]) {
-    
+    pointerFn();
 }

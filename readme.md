@@ -1,11 +1,13 @@
  ## C语言数据结构
- 
-—— 指针
- 
-—— 结构体
- 
-—— 动态内存
 
-—— 数组
+XCode开启项目编译
+ 
+—— 指针 poin/Pointer
+ 
+—— 结构体 poin/Struct
+ 
+—— 动态内存 poin/Malloc
 
-—— 链表
+—— 数组 Arr
+
+—— 链表 list

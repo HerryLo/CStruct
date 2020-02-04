@@ -86,17 +86,13 @@
 		5F1C4336234F77E50034E743 /* pointer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pointer.c; sourceTree = "<group>"; };
 		5F1C433B234F788B0034E743 /* struct.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = struct.h; sourceTree = "<group>"; };
 		5F1C433C234F788B0034E743 /* struct.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = struct.c; sourceTree = "<group>"; };
+		5F51AAF723E95EC4002E3084 /* poin */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = poin; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F51AAF823E95EC4002E3084 /* list */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = list; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F51AAF923E95EC4002E3084 /* Arr */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Arr; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F7AAC7D23536F5400B876DF /* malloc1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = malloc1.h; sourceTree = "<group>"; };
 		5F7AAC7E23536F5400B876DF /* malloc1.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = malloc1.c; sourceTree = "<group>"; };
-		5FB8D7BE2377284800373DC2 /* CC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CC; sourceTree = BUILT_PRODUCTS_DIR; };
-		5FB8D7BF2377284800373DC2 /* base */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = base; sourceTree = BUILT_PRODUCTS_DIR; };
-		5FB8D7C02377284800373DC2 /* table */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = table; sourceTree = BUILT_PRODUCTS_DIR; };
-		5FB8D7C12377284800373DC2 /* pointer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = pointer; sourceTree = BUILT_PRODUCTS_DIR; };
-		5FB8D7C6237728B300373DC2 /* Arr */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Arr; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FB8D7C8237728B300373DC2 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		5FF72A8D235C9B1400EC8413 /* poin */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = poin; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FF72A8F235C9B1400EC8413 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		5FF72A98235C9C8F00EC8413 /* list */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = list; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FF72A9A235C9C8F00EC8413 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -191,16 +187,12 @@
 		5FDE68C221244443003C72AC = {
 			isa = PBXGroup;
 			children = (
-				5FF72A8D235C9B1400EC8413 /* poin */,
 				5FF72A8E235C9B1400EC8413 /* poin */,
-				5FF72A98235C9C8F00EC8413 /* list */,
 				5FF72A99235C9C8F00EC8413 /* list */,
-				5FB8D7BE2377284800373DC2 /* CC */,
-				5FB8D7BF2377284800373DC2 /* base */,
-				5FB8D7C02377284800373DC2 /* table */,
-				5FB8D7C12377284800373DC2 /* pointer */,
-				5FB8D7C6237728B300373DC2 /* Arr */,
 				5FB8D7C7237728B300373DC2 /* Arr */,
+				5F51AAF723E95EC4002E3084 /* poin */,
+				5F51AAF823E95EC4002E3084 /* list */,
+				5F51AAF923E95EC4002E3084 /* Arr */,
 			);
 			sourceTree = "<group>";
 		};
@@ -240,7 +232,7 @@
 			);
 			name = base;
 			productName = base;
-			productReference = 5FB8D7BF2377284800373DC2 /* base */;
+			productReference = 5F51AAF423E95EC4002E3084 /* base */;
 			productType = "com.apple.product-type.tool";
 		};
 		5F48A29B235C97C300B5EBD0 /* table */ = {
@@ -257,7 +249,7 @@
 			);
 			name = table;
 			productName = table;
-			productReference = 5FB8D7C02377284800373DC2 /* table */;
+			productReference = 5F51AAF523E95EC4002E3084 /* table */;
 			productType = "com.apple.product-type.tool";
 		};
 		5FB8D7C5237728B300373DC2 /* Arr */ = {
@@ -274,7 +266,7 @@
 			);
 			name = Arr;
 			productName = Arr;
-			productReference = 5FB8D7C6237728B300373DC2 /* Arr */;
+			productReference = 5F51AAF923E95EC4002E3084 /* Arr */;
 			productType = "com.apple.product-type.tool";
 		};
 		5FDE68CA21244443003C72AC /* CC */ = {
@@ -291,7 +283,7 @@
 			);
 			name = CC;
 			productName = CC;
-			productReference = 5FB8D7BE2377284800373DC2 /* CC */;
+			productReference = 5F51AAF323E95EC4002E3084 /* CC */;
 			productType = "com.apple.product-type.tool";
 		};
 		5FF72A81235C9A3E00EC8413 /* pointer */ = {
@@ -308,7 +300,7 @@
 			);
 			name = pointer;
 			productName = pointer;
-			productReference = 5FB8D7C12377284800373DC2 /* pointer */;
+			productReference = 5F51AAF623E95EC4002E3084 /* pointer */;
 			productType = "com.apple.product-type.tool";
 		};
 		5FF72A8C235C9B1400EC8413 /* poin */ = {
@@ -325,7 +317,7 @@
 			);
 			name = poin;
 			productName = poin;
-			productReference = 5FF72A8D235C9B1400EC8413 /* poin */;
+			productReference = 5F51AAF723E95EC4002E3084 /* poin */;
 			productType = "com.apple.product-type.tool";
 		};
 		5FF72A97235C9C8F00EC8413 /* list */ = {
@@ -342,7 +334,7 @@
 			);
 			name = list;
 			productName = list;
-			productReference = 5FF72A98235C9C8F00EC8413 /* list */;
+			productReference = 5F51AAF823E95EC4002E3084 /* list */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -389,10 +381,6 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5FDE68CA21244443003C72AC /* CC */,
-				5F48A290235C974D00B5EBD0 /* base */,
-				5F48A29B235C97C300B5EBD0 /* table */,
-				5FF72A81235C9A3E00EC8413 /* pointer */,
 				5FF72A8C235C9B1400EC8413 /* poin */,
 				5FF72A97235C9C8F00EC8413 /* list */,
 				5FB8D7C5237728B300373DC2 /* Arr */,

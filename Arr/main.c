@@ -11,8 +11,6 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-#include "ArrList/ArrList.h"
-
 bool a = 1;
 
 typedef struct ArrList {

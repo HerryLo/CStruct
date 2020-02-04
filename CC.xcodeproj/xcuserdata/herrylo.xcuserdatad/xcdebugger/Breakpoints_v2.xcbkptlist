@@ -42,11 +42,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "list/main.c"
-            timestampString = "593789240.735605"
+            timestampString = "602497133.456057"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "94"
-            endingLineNumber = "94">
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "main"
+            landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -56,11 +58,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "list/main.c"
-            timestampString = "593789240.735902"
+            timestampString = "602497133.456145"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "89"
-            endingLineNumber = "89">
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "main"
+            landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -70,11 +74,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "list/main.c"
-            timestampString = "593789240.736109"
+            timestampString = "602497133.456205"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50">
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "main"
+            landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -84,11 +90,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "list/main.c"
-            timestampString = "593789240.7363091"
+            timestampString = "602497133.456261"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "108"
-            endingLineNumber = "108">
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "main"
+            landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -98,11 +106,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "list/main.c"
-            timestampString = "593789240.736517"
+            timestampString = "602497133.456326"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103">
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "main"
+            landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

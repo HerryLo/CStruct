@@ -6,6 +6,8 @@
 	<dict>
 		<key>Arr.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
@@ -19,40 +21,42 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>3</integer>
 		</dict>
 		<key>base.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>4</integer>
 		</dict>
 		<key>list.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>2</integer>
 		</dict>
 		<key>poin.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
 			<true/>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>1</integer>
 		</dict>
 		<key>pointer.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>6</integer>
 		</dict>
 		<key>table.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>5</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -63,6 +67,11 @@
 			<true/>
 		</dict>
 		<key>5F48A29B235C97C300B5EBD0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5FB8D7C5237728B300373DC2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
