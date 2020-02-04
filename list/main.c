@@ -12,12 +12,17 @@
 #include <stdbool.h>
 
 typedef struct Node {
-    int data;
-    struct Node * next;
-}Node;
+    int data; // 数据域
+    struct Node * next; //指针域
+}Node, *PNode;
+
+PNode createList() {
+    
+};
 
 int main() {
-    printf("数组");
-    
+    // 头节点
+    PNode pHead = NULL; // 等价于struct Node * element = NULL
+
     return 0;
 }
