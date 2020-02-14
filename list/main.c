@@ -24,11 +24,15 @@ PNode createList(void) {
     // 存放用户输入的节点值
     int val;
     
+    // 不存放有效数据的头结点
     PNode pHead = (PNode)malloc(sizeof(Node));
     if(NULL == pHead) {
         printf("分配失败，程序终止！\n");
         exit(-1);
     }
+    
+    PNode pTail = pHead;
+    pTail->next = NULL;
     
     printf("请输入链表的长度: len=");
     scanf("%d", &len);
@@ -42,14 +46,18 @@ PNode createList(void) {
             printf("分配失败，程序终止！\n");
             exit(-1);
         }
-
+        
+        pNew->data = val;
+        pTail->next = pNew;
+        pNew->next = NULL;
+        pTail = pNew;
     }
     return pHead;
 }
 
 int main() {
     // 头节点
-    PNode pHead = NULL; // 等价于struct Node * element = NULL
+    PNode pHead = NULL; // 等价于struct Node * pHead = NULL
     
     pHead = createList();
     return 0;
