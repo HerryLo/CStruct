@@ -42,11 +42,8 @@ PNode createList(void) {
             printf("分配失败，程序终止！\n");
             exit(-1);
         }
-        
-        
 
     }
-    
     return pHead;
 }
 
