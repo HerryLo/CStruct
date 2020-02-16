@@ -55,10 +55,22 @@ PNode createList(void) {
     return pHead;
 }
 
+// 遍历
+int traverseList(PNode pHead) {
+    PNode next = pHead->next;
+    while(next != NULL) {
+        printf("%d", next->data);
+        next = next->next;
+    }
+    printf("\n");
+    return 0;
+}
+
 int main() {
     // 头节点
     PNode pHead = NULL; // 等价于struct Node * pHead = NULL
     
     pHead = createList();
+    traverseList(pHead);
     return 0;
 }
