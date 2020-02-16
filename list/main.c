@@ -55,7 +55,7 @@ PNode createList(void) {
     return pHead;
 }
 
-// 遍历
+// 遍历  
 int traverseList(PNode pHead) {
     PNode next = pHead->next;
     while(next != NULL) {
