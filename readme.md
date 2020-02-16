@@ -22,12 +22,38 @@
 void main() {
     int *p;                 // 声明指针变量p；
     int i = 10;             // 声明整型变量i赋值10；
-    p = &i;                 // 将i的地址赋值给变量p 
+    p = &i;                 // 将i的地址赋值给变量p
     printf("%d", *p);       // *p == i;
 }
 ```
+一个指针变量占几个字节，由变量类型和机型决定。
  
-—— 结构体 poin/Struct
+## 结构体
+
+**struct**定义：用户需要定义的复合数据类型。
+
+注意：普通的数据结构无法加减运算，但是可以相互赋值。
+
+```c
+typedef struct  Student {
+    int id;
+    int grade;
+    char name[20];
+}Student;
+
+void Assignment(Student *c) {
+    c->id = 2;
+}
+
+void main() {
+    Student a = {1, 1000, "liuheng"};
+    Student *b;
+    b = &a;
+    Assignment(&b);
+    printf("%d\n", a.id);
+}
+```
+结构体变量指针b，存储结构体变量a的地址。
  
 —— 动态内存 poin/Malloc
 
