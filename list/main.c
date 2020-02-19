@@ -57,12 +57,34 @@ PNode createList(void) {
 
 // 遍历  
 int traverseList(PNode pHead) {
+    printf("打印链表的z值：\n");
     PNode next = pHead->next;
     while(next != NULL) {
-        printf("%d", next->data);
+        printf("%d \n", next->data);
         next = next->next;
     }
     printf("\n");
+    return 0;
+}
+
+// 是否为空
+bool isEmpty(PNode pHead) {
+    PNode next = pHead->next;
+    if(next != NULL) {
+        return false;
+    }
+    return true;
+}
+
+// 长度
+int lengthList(PNode pHead) {
+    PNode next = pHead->next;
+    int i = 0;
+    while(next != NULL) {
+        next = next->next;
+        i++;
+    }
+    printf("链表的长度为: %d \n", i);
     return 0;
 }
 
@@ -72,5 +94,6 @@ int main() {
     
     pHead = createList();
     traverseList(pHead);
+    lengthList(pHead);
     return 0;
 }
