@@ -56,7 +56,7 @@ void main() {
 ```
 结构体变量指针b，存储结构体变量a的地址。
  
-—— 动态内存 poin/Malloc
+## 动态内存 poin/Malloc
 
 —— 数组 Arr
 
