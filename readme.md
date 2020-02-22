@@ -31,12 +31,12 @@ void main() {
  
 ## 结构体
 
-**struct**定义：用户需要定义的复合数据类型。
+结构体用来定义一种数据类型。**struct**定义：用户需要定义的复合数据类型。
 
 注意：普通的数据结构无法加减运算，但是可以相互赋值。
 
 ```c
-typedef struct  Student {
+typedef struct Student {
     int id;
     int grade;
     char name[20];
@@ -56,7 +56,25 @@ void main() {
 ```
 结构体变量指针b，存储结构体变量a的地址。
  
-## 动态内存 poin/Malloc
+## 动态内存
+
+```c
+void mallocFn() {
+    // malloc申请动态内存空间
+    // sizeof设置内存大小，(int *)表示数据类型
+    int * arr = (int *)malloc(sizeof(5)); // 返回的是第一个字节的地址
+    
+    arr[0]= 12;
+    arr[1]= 234;
+    printf("%d\n", arr[0]);
+    
+    // free释放内存空间
+    free(arr); // 只是将申请的内存地址标记为释放
+    arr = NULL;
+    printf("%d\n", p[1]);
+}
+```
+变脸指针b是指向内存第一个元素的内存地址。
 
 —— 数组 Arr
 

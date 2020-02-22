@@ -85,15 +85,75 @@ int lengthList(PNode pHead) {
         i++;
     }
     printf("链表的长度为: %d \n", i);
-    return 0;
+    return i;
 }
+
+// 移除
+// pHead 链表头节点
+// i 移除的下标，由1开始
+bool removeList(PNode pHead, int position, int *pVal) {
+    PNode p = pHead;
+    int i = 0;
+    
+    // p->next != NULL，移除的前提下，保证要移除的那个只存在；
+    // 在存在的前提下，p会指向要移除的前一个节点；
+    while (p->next != NULL && i< position - 1) {
+        p = p->next;
+        ++i;
+    }
+    
+    // i > position - 1，防止负数
+    if(i > position - 1 || p->next == NULL) {
+        return false;
+    }
+    
+    PNode q = p->next;
+    *pVal = p->data;
+    
+    p->next = p->next->next;
+    free(q);
+    q = NULL;
+    return true;
+}
+
+// 插入
+// pHead 链表头节点
+// i 插入的下标，由1开始
+bool insertList(PNode pHead, int position, int val){
+    PNode p = pHead;
+    int i = 0;
+    
+    // p != NULL，插入的前提下，保证要插入位置的前y一个元素存在；
+    // 在存在的前提下，p会指向要插入的前的节点；
+    while (p->next != NULL && i< position - 1) {
+        p = p->next;
+        ++i;
+    }
+    // // i > position - 1，防止负数
+    if(i > position - 1 || p == NULL) {
+        return false;
+    }
+    
+    PNode pNew = (PNode)malloc(sizeof(Node));
+    if(NULL == pNew) {
+        printf("分配失败，程序终止！\n");
+        exit(-1);
+    }
+    pNew->data = val;
+    pNew->next = p->next;
+    p->next = pNew;
+    return true;
+}
+
 
 int main() {
     // 头节点
     PNode pHead = NULL; // 等价于struct Node * pHead = NULL
+    int value;
     
     pHead = createList();
+    removeList(pHead, 8, &value);
+    insertList(pHead, 2, 123123);
     traverseList(pHead);
-    lengthList(pHead);
     return 0;
 }
