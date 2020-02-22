@@ -67,15 +67,6 @@ int traverseList(PNode pHead) {
     return 0;
 }
 
-// 是否为空
-bool isEmpty(PNode pHead) {
-    PNode next = pHead->next;
-    if(next != NULL) {
-        return false;
-    }
-    return true;
-}
-
 // 长度
 int lengthList(PNode pHead) {
     PNode next = pHead->next;
