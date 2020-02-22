@@ -11,6 +11,9 @@
 //指针
 #include "Pointer/pointer.c"
 
+#include "Malloc/malloc1.c"
+
 int main(int argc, const char * argv[]) {
-    pointerFn();
+//    pointerFn();
+    mallocFn();
 }
