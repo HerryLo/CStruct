@@ -14,6 +14,6 @@
 #include "Malloc/malloc1.c"
 
 int main(int argc, const char * argv[]) {
-//    pointerFn();
-    mallocFn();
+//    mallocFn();
+    pointerFn();
 }

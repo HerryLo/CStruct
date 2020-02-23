@@ -51,6 +51,11 @@
 			<key>orderHint</key>
 			<integer>6</integer>
 		</dict>
+		<key>queue.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
 		<key>table.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
