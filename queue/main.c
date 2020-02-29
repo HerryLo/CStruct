@@ -32,6 +32,13 @@ bool isFullQueue(Queue * q) {
     return false;
 }
 
+// 是否空队
+bool isEmptyQueue(Queue * q) {
+    if(q->pRear == q->pFront)
+        return true;
+    return false;
+}
+
 // 入队
 bool inputQueue(Queue * q, int value) {
     if(isFullQueue(q))
@@ -39,6 +46,16 @@ bool inputQueue(Queue * q, int value) {
     else
         q->PArrry[q->pRear] = value;
         q->pRear = (q->pRear + 1)%len;
+    return true;
+}
+
+// 出队
+bool outputQueue(Queue * q, int *value) {
+    if(isEmptyQueue(q))
+        return false;
+    else
+        *value = q->PArrry[q->pFront];
+        q->pFront = (q->pFront + 1)%len;
     return true;
 }
 
@@ -55,6 +72,7 @@ void traverseQueue(Queue * q) {
 int main(int argc, const char * argv[]) {
     printf("---------循环队列构建---------\n");
     Queue q;
+    int value;
     
     initQueue(&q);
     
@@ -67,5 +85,11 @@ int main(int argc, const char * argv[]) {
     inputQueue(&q, 12);
     inputQueue(&q, 12);
     traverseQueue(&q);
+    
+    outputQueue(&q, &value);
+    printf("出队值为：%d\n", value);
+    traverseQueue(&q);
+    
+    
     return 0;
 }
