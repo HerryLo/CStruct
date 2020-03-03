@@ -138,7 +138,7 @@ bool insertList(PNode pHead, int position, int val){
 
 
 int main() {
-    // 头节点
+    // 头结点
     PNode pHead = NULL; // 等价于struct Node * pHead = NULL
     int value;
     
