@@ -1,6 +1,6 @@
  ## C语言数据结构
 
-![](https://img.shields.io/badge/-C语言-brightgreen)
+![](https://img.shields.io/badge/-C-brightgreen)
 ![](https://img.shields.io/badge/-XCode-brightgreen)
 
 C语言学习数据结构的原因：C语言中存在指针、内存的概念，我们可以手动去操作它。
