@@ -1,5 +1,8 @@
  ## C语言数据结构
 
+![](https://img.shields.io/badge/-C语言-brightgreen)
+![](https://img.shields.io/badge/-XCode-brightgreen)
+
 C语言学习数据结构的原因：C语言中存在指针、内存的概念，我们可以手动去操作它。
 
 数据结构实际专门是来研究数据存储的问题，而数据的存储包含两个方面：**个体关系的存储 + 个体关系的存储。
