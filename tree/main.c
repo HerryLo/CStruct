@@ -11,33 +11,51 @@
 #include <stdbool.h>
 #include <string.h>
 
+typedef char ElemType;
+
 typedef struct BiTNode {
-    char data;
-    struct TNode * pLchild;
-    struct TNode * pRchild;
+    ElemType data;
+    struct BiTNode * pLchild;
+    struct BiTNode * pRchild;
 }BiTNode, *BiTree;
 
 void createTree(BiTree *T);
+void preOrderTree(BiTree T);
 
 int main(int argc, const char * argv[]) {
     BiTree bt;
     createTree(&bt);
     
-    // insert code here...
-//    printf("%d \n", bt->data);
+    preOrderTree(bt);
     return 0;
 }
 
 // 创建一个二叉树
 void createTree(BiTree *T){
-    char ch;
-    scanf("%c", &ch);
-    if(ch == '0') {
+    ElemType ch;
+    printf("输入值：");
+    scanf("\n %c", &ch);
+    if(ch == '#') {
         *T = NULL;
     }else {
         *T = (BiTree)malloc(sizeof(BiTNode));
+        if(!*T) {
+            printf("创建失败！！\n");
+            exit(-1);
+        }
         (*T)->data = ch;
         createTree(&(*T)->pLchild);
         createTree(&(*T)->pRchild);
     };
+};
+
+// 递归——->先序遍历
+// 先访问根节点，再访问左子节点，最后访问右子节点
+void preOrderTree(BiTree T){
+    if(T == NULL) {
+        return;
+    }
+    printf("%c\n", T->data);
+    preOrderTree(T->pLchild);
+    preOrderTree(T->pRchild);
 };
