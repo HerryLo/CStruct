@@ -21,7 +21,7 @@ C语言学习数据结构的原因：C语言中存在指针、内存的概念，
 
 内存地址：内存单元的编号，从0到非负整数；
 
-指针变量：**存储内存单元编号的变量**；
+**指针变量**：**存储内存单元编号的变量**；
 
 ```C
 void main() {
@@ -46,6 +46,7 @@ typedef struct Student {
     char name[20];
 }Student;
 
+// 需要用到指针变量
 void Assignment(Student *c) {
     c->id = 2;
 }
@@ -53,12 +54,14 @@ void Assignment(Student *c) {
 void main() {
     Student a = {1, 1000, "liuheng"};
     Student *b;
-    b = &a;
-    Assignment(&b);
+    b = &a; // &a为变量a的地址，它需要指针变量才可以接收
+    Assignment(&b); // 传递的是地址
     printf("%d\n", a.id);
 }
 ```
 结构体变量指针b，存储结构体变量a的地址。
+
+注意⚠️：如何判断何时使用指针变量？在函数参数中，一旦你需要传递地址，而对方需要接收时，那么此时必须使用指针变量，当然类型也必须要相同！！
  
 ## 动态内存
 

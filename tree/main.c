@@ -23,7 +23,8 @@ void createTree(BiTree *T);
 void preOrderTree(BiTree T);
 
 int main(int argc, const char * argv[]) {
-    BiTree bt;
+    BiTree bt; //等同于 struct BiTNode * bt
+    // &bt是一个地址
     createTree(&bt);
     
     preOrderTree(bt);
@@ -31,6 +32,10 @@ int main(int argc, const char * argv[]) {
 }
 
 // 创建一个二叉树
+// 参数 struct BiTNode * * T
+// 参数拆为两部分看，首先 struct BiTNode * 表示的是参数的类型
+// *T表示的是一个存储内存地址的指针变量
+// 形参 T存储内存地址，*T才是实际传入的值
 void createTree(BiTree *T){
     ElemType ch;
     printf("输入值：");
@@ -55,7 +60,7 @@ void preOrderTree(BiTree T){
     if(T == NULL) {
         return;
     }
-    printf("%c\n", T->data);
+    printf("%c \n", T->data);
     preOrderTree(T->pLchild);
     preOrderTree(T->pRchild);
 };
