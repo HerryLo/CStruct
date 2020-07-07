@@ -56,9 +56,9 @@ PNode createList(void) {
 }
 
 // 遍历  
-int traverseList(PNode pHead) {
+int traverseList(PNode *pHead) {
     printf("打印链表的z值：\n");
-    PNode next = pHead->next;
+    PNode next = (*pHead)->next;
     while(next != NULL) {
         printf("%d \n", next->data);
         next = next->next;
@@ -143,8 +143,11 @@ int main() {
     int value;
     
     pHead = createList();
+    // 移除
     removeList(pHead, 8, &value);
+    // 插入替换
     insertList(pHead, 2, 123123);
-    traverseList(pHead);
+    // 遍历
+    traverseList(&pHead);
     return 0;
 }
