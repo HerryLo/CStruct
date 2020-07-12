@@ -50,7 +50,6 @@ int main() {
     printf("数组长度为：%d\n", arr.len);
     printf("数组当前有效长度为：%d\n", arr.cnt);
     printf("数组中第一个元素的值：%d\n", *(arr.p));
-    
     return 0;
 }
 
