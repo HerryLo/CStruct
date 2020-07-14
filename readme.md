@@ -106,9 +106,7 @@ void main() {
     printf("数组长度为：%d\n", arr.len);
     printf("数组当前有效长度为：%d\n", arr.cnt);
     // arr.p[0] == *(arr.p)
-    // arr.p[1] == *(arr.p)[1]
     printf("数组当前第一个元素的值：%d\n", arr.p[0]);
-    printf("数组当前第二个元素的值：%d\n", arr.p[1]);
 }
 ```
 **这里的arr.p只是指向数组中第一个元素的内存地址**
