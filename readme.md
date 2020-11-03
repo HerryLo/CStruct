@@ -219,7 +219,7 @@ struct Stack {
 
 参考：阶乘、汉诺塔、斐波拉切数列
 
-## 树Tree 
+## Tree 树
 
 树的专业定义：
 
@@ -253,3 +253,5 @@ struct Stack {
 **一般树转换为二叉树**：把一个普通的树转换为二叉树，它一定没有右子节点。转换方法——左指针域指向它的第一个孩子，右指针指向它的兄弟，只要能满足此条件，就可以把普通二叉树转换为二叉树。
 
 ![](./img/WechatIMG454.png)
+
+代码可供参考：[二叉树创建&先序、中序、后序源码链接](https://github.com/HerryLo/CStruct/blob/master/tree/main.c)
