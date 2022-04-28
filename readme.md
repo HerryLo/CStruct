@@ -11,7 +11,7 @@ C语言学习数据结构的原因：C语言中存在指针、内存的概念，
 - Mac
 - XCode
 
-以下的内容都是通过学习[郝斌老师数据结构自学视频](https://www.bilibili.com/video/av12907870)后整理。
+以下的内容都是通过学习[郝斌老师数据结构自学视频](https://www.bilibili.com/video/av12907870)后整理，建议感兴趣的同学可以跟着视频学习一波。
  
 ## 指针Pointer
 
