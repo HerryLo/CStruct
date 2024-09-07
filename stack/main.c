@@ -3,10 +3,10 @@
 //  stack
 //
 //  Created by HerryLo on 2020/3/8.
-//  Copyright Â© 2020å¹´ HerryLo. All rights reserved.
+//  Copyright ? 2020Äê HerryLo. All rights reserved.
 //
 
-// æ ˆä¹‹åŠ¨æ€é“¾è¡¨æ ˆ
+// Õ»Ö®¶¯Ì¬Á´±íÕ»
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
@@ -21,13 +21,13 @@ typedef struct Stack{
     pNode pBottom;
 }Stack, *pStack;
 
-// åˆå§‹åŒ–
+// ³õÊ¼»¯
 void initStack(pStack s);
-// å‹æ ˆ
+// Ñ¹Õ»
 void pushStack(pStack s, int value);
-// éå†
+// ±éÀú
 void traverseStack(pStack s);
-// å‡ºæ ˆ
+// ³öÕ»
 bool popStack(pStack s);
 
 int main() {
@@ -46,45 +46,51 @@ int main() {
 }
 
 void initStack(pStack s){
-    // åˆå§‹åŒ–æ ˆ
+    // ³õÊ¼»¯Õ»
     s->pTop = (pNode)malloc(sizeof(Node));
     if(s->pTop == NULL) {
-        printf("åŠ¨æ€å†…å­˜åˆ†é…å¤±è´¥");
+        printf("¶¯Ì¬ÄÚ´æ·ÖÅäÊ§°Ü");
         exit(-1);
     }else{
         s->pBottom = s->pTop;
         s->pTop->next = NULL;
+        printf("³õÊ¼»¯Õ»³É¹¦ ");
+        printf("pTop = %d ", s->pTop->data);
+        printf("pBottom = %d \n", s->pBottom->data);
     }
 }
 
 void pushStack(pStack s, int value){
     pNode pNew = (pNode)malloc(sizeof(Node));
     if(pNew == NULL) {
-        printf("åŠ¨æ€å†…å­˜åˆ†é…å¤±è´¥");
+        printf("¶¯Ì¬ÄÚ´æ·ÖÅäÊ§°Ü");
         exit(-1);
     }
     pNew->data = value;
     pNew->next = s->pTop;
     s->pTop = pNew;
+
+    printf("ÈëÕ»³É¹¦ data = %d \n", value);
 }
 
 bool popStack(pStack s){
-    printf("å‡ºæ ˆ\n");
     pNode top = s->pTop;
+    int data = top->data;
     if(top->next == NULL){
         return false;
     }
     s->pTop = top->next;
+    printf("³öÕ»³É¹¦ data = %d \n", data);
     free(top);
-    
     return true;
 }
 
 void traverseStack(pStack s) {
-    printf("éå†stack\n");
+    printf("\n±éÀústack");
     pNode top = s->pTop;
     while(top->next != NULL) {
-        printf("%d\n", top->data);
+        printf(" %d ", top->data);
         top = top->next;
     }
+    printf("\n");
 }
