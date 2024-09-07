@@ -78,6 +78,7 @@ void mallocFn() {
     arr = NULL;
 }
 ```
+通过`malloc`申请得内存空间，一定要记得通过`free`释放。
 
 ## 数组Array
 
