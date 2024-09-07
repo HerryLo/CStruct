@@ -76,10 +76,8 @@ void mallocFn() {
     // free释放内存空间
     free(arr); // 只是将申请的内存地址标记为释放
     arr = NULL;
-    printf("%d\n", p[1]);
 }
 ```
-变脸指针b是指向内存第一个元素的内存地址。
 
 ## 数组Array
 
